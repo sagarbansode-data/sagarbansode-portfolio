@@ -1,4 +1,5 @@
 html{
+    
     scroll-behavior:smooth;
 }
 
@@ -837,14 +838,18 @@ line-height:1.6;
 
 .project-gallery{
 
-    margin-bottom:30px;
+    margin-bottom:15px;
 
 }
+
+/*=============================
+    PROJECT IMAGE SIZE
+==============================*/
 
 .main-image img{
 
     width:100%;
-    height:350px;
+    height:220px;
 
     object-fit:cover;
 
@@ -1517,5 +1522,125 @@ footer{
     font-size:14px;
 
 }
+
+}
+
+.active-thumb-blinkit{
+
+    opacity:1 !important;
+
+    border:2px solid #38bdf8 !important;
+
+}
+
+/*=========================================
+          IMAGE PREVIEW MODAL
+=========================================*/
+
+.image-modal{
+
+    display:none;
+
+    position:fixed;
+
+    z-index:99999;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.92);
+
+    justify-content:center;
+
+    align-items:center;
+
+    animation:fadeIn .25s;
+
+}
+
+.modal-content{
+
+    max-width:92%;
+
+    max-height:90%;
+
+    border-radius:15px;
+
+    box-shadow:0 0 35px rgba(56,189,248,.35);
+
+    animation:zoomIn .25s;
+
+}
+
+.close-modal{
+
+    position:absolute;
+
+    top:20px;
+
+    right:35px;
+
+    color:white;
+
+    font-size:45px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.close-modal:hover{
+
+    color:#38bdf8;
+
+    transform:scale(1.2);
+
+}
+
+.project-gallery img{
+
+    cursor:pointer;
+
+}
+
+@keyframes fadeIn{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes zoomIn{
+
+    from{
+
+        transform:scale(.8);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:scale(1);
+
+        opacity:1;
+
+    }
 
 }
