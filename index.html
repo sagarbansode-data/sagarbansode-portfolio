@@ -8,7 +8,7 @@
     <!-- SEO Meta Tags -->
 
 <link rel="canonical"
-href="https://sagarbansode-data.github.io/sagarbansode-portfolio/>
+href="https://sagarbansode-data.github.io/sagarbansode-portfolio/#home>
 
 <meta name="description"
 content="Sagar Bansode is a Data Analyst specializing in SQL, PostgreSQL, Python, Power BI and Microsoft Excel. Explore my portfolio, dashboards, analytics projects and professional experience.">
@@ -496,7 +496,83 @@ I am passionate about solving business problems through data, continuously impro
 
         </div>
 
-        <!-- Project 2 -->
+        <!-- ================= Project 2 : Blinkit ================= -->
+
+<div class="project-card">
+
+    <div class="project-gallery">
+
+        <div class="main-image">
+
+            <img id="mainBlinkit"
+
+                 src="images/blinkit_dashboard_1.png"
+
+                 alt="Blinkit Dashboard">
+
+        </div>
+
+        <div class="thumbnails">
+
+            <img src="images/blinkit_dashboard_1.png"
+
+                 onclick="changeBlinkit(this)"
+
+                 class="active-thumb-blinkit">
+
+            <img src="images/blinkit_dashboard_2.png"
+
+                 onclick="changeBlinkit(this)">
+
+        </div>
+
+    </div>
+
+    <div class="project-content">
+
+        <h3>Blinkit Sales Performance Dashboard</h3>
+
+        <div class="tech-stack">
+
+            <span>Power BI</span>
+
+            <span>DAX</span>
+
+            <span>Power Query</span>
+
+            <span>Microsoft Excel</span>
+
+        </div>
+
+        <ul>
+
+            <li>Designed an interactive Power BI dashboard to analyse Blinkit's sales performance, outlet operations and product distribution.</li>
+
+            <li>Built reusable data models, DAX measures and Power Query transformations for data preparation, KPI calculation and business reporting.</li>
+
+            <li>Developed interactive dashboards tracking Total Sales, Average Sales, Total Items, Customer Ratings and Outlet Performance.</li>
+
+            <li>Created dynamic visualizations for Outlet Size, Outlet Location, Item Type, Fat Content and Outlet Type to support business decision-making.</li>
+
+            <li>Implemented interactive filters and slicers enabling detailed analysis across outlet categories and product segments.</li>
+
+        </ul>
+
+        <a href="https://github.com/sagarbansode-data/Blinkit-Sales-Performance-Dashboard"
+
+           target="_blank"
+
+           class="github-btn">
+
+            View on GitHub
+
+        </a>
+
+    </div>
+
+</div>
+
+        <!-- Project 3 -->
 
         <div class="project-card">
 
@@ -580,6 +656,16 @@ I am passionate about solving business problems through data, continuously impro
     <p>© 2026 Sagar Bansode • Data Analyst • Built with HTML, CSS & JavaScript</p>
 
 </footer>
+
+<!-- ================= IMAGE PREVIEW MODAL ================= -->
+
+<div id="imageModal" class="image-modal">
+
+    <span class="close-modal">&times;</span>
+
+    <img id="modalImage" class="modal-content">
+
+</div>
 
 <script src="script.js"></script>
 
