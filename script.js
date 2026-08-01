@@ -69,6 +69,25 @@ function changeDashboard(image) {
     image.classList.add("active-thumb");
 }
 
+/*=========================
+      BLINKIT GALLERY
+=========================*/
+
+function changeBlinkit(image){
+
+    document.getElementById("mainBlinkit").src = image.src;
+
+    const thumbs = image.parentElement.querySelectorAll("img");
+
+    thumbs.forEach(img=>{
+
+        img.classList.remove("active-thumb-blinkit");
+
+    });
+
+    image.classList.add("active-thumb-blinkit");
+
+}
 
 /*=====================================
       ACTIVE NAVBAR
@@ -100,5 +119,53 @@ window.addEventListener("scroll", () => {
         }
 
     });
+
+});
+
+/*=====================================
+        IMAGE PREVIEW MODAL
+=====================================*/
+
+const modal = document.getElementById("imageModal");
+
+const modalImg = document.getElementById("modalImage");
+
+const closeModal = document.querySelector(".close-modal");
+
+document.querySelectorAll(".project-gallery img").forEach(image=>{
+
+    image.addEventListener("click",function(){
+
+        modal.style.display="flex";
+
+        modalImg.src=this.src;
+
+    });
+
+});
+
+closeModal.onclick=function(){
+
+    modal.style.display="none";
+
+}
+
+modal.onclick=function(e){
+
+    if(e.target===modal){
+
+        modal.style.display="none";
+
+    }
+
+}
+
+document.addEventListener("keydown",function(e){
+
+    if(e.key==="Escape"){
+
+        modal.style.display="none";
+
+    }
 
 });
